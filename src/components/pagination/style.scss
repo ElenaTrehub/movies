@@ -1,0 +1,33 @@
+@import '../../style/variables.scss';
+ul.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 0;
+
+  li.page-item.active{
+    a.page-link{
+      color: #ffffff;
+      background-color: lighten($main-color, 5%);
+      border: 1px solid $main-color;
+    }
+  }
+  a.page-link{
+    padding: 0.55rem 0.5rem;
+    min-width: 2.8rem;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid #e3e4e5;
+    color: $grey;
+    font-weight: 900;
+    font-size: 1rem;
+    transition: all .3s ease;
+
+    &:hover{
+      background-color: $dark;
+      color: #ffffff;
+      border-color: $dark;
+    }
+  }
+}
